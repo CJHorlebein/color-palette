@@ -23,7 +23,7 @@ class App extends Component {
 
     randColor() {
         let color = '#';
-        for (let i = 0; i < 6; i++) {color += Math.floor(Math.random() * 16).toString(16).toUpperCase();}
+        for (let i = 0; i < 6; i++) {color += (~~(Math.random() * 16)).toString(16).toUpperCase();}
         return color;
         // return "#" + Math.floor(Math.random() * 16777215).toString(16).toUpperCase();
     }
